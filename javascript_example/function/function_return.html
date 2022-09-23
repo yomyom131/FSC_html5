@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        
+    </head>
+    <body>
+        <script>
+            function f(x, callback) { //제곱 함수
+                callback(x * x);
+            }
+            var callback = function (result){
+                alert(result);
+            }
+            f(4, alert);
+            f(3, callback);
+            
+        </script>
+    </body>
+</html>

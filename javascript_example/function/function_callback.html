@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //함수를 선언합니다.
+            function calltenTimes(callback) {
+                //10회 반복 합니다.
+                for (var i = 0; i < 10; i ++) {
+                    callback(); //매개 변수로 전달된 함수를 호출합니다.
+                }
+            }
+            var callback = function() {
+                alert('함수 호출');
+            }
+            calltenTimes(callback); //함수를 호출합니다.
+        </script>
+    </body>
+</html>
