@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q16</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        function F(x){
+        if (x == 1){
+            return 1;
+        }
+        return x * F(x - 1);                    //return 명령문은 함수 실행을 종료하고 주어진 값을 함수 호출 지점으로 반환
+    }
+    var num = prompt("입력해주세요", "입력");
+    alert(num +'! = ' + F(num));
+    </script>
+</html>
