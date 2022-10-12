@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter6.Question13</title>
+    <style>
+        .backbord{
+            width: 180px;
+            text-align: center;
+            padding: 0px 50px;
+            border-radius: 5px;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            display: grid;
+        }
+
+        .center { 
+            margin: 35px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.4.1.js" alt="정사각형"></script>
+    <script>
+        $(document).ready(function () {
+            $('img').attr({
+                src: function (index) {
+                    var size = (index + 1) * 100;
+                    return 'http://place-hold.it/' + size + 'x100';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class = "backbord">
+        <h1> Card </h1>
+        <img class="center">
+        <p>
+            um ab blanditiis placeat sunt libero voluptatum voluptas iure magnam et aliquam nemo ipsum quo? Incidunt, fuga deserunt?
+        </p>
+    </div>
+</body>
+</html>

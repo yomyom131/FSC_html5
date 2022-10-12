@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>간단한 입력 양식</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        
+        .container {
+            width: 300px;
+            text-align: right;
+        }
+
+        label {
+            display: inline-block;
+            width: 70px;
+            height: 20px;
+            text-align: left;
+            vertical-align: -3px;
+        }
+
+        .input {
+            border-color: white;
+            width: 200px;
+            height: 20px;
+            border-radius: 20px;
+            margin-bottom: 3px;
+            margin-top: 3px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border-width: thin; 
+            border-color: lightskyblue;
+            background-color: lightblue;
+            width: 200px;
+            height: 20px;
+            border-radius: 20px;
+            margin-bottom: 3px;
+            margin-top: 3px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .font {
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>간단한 입력 양식</h1>
+    <div class="container">
+        <div class="font"><label>아이디</label><input class="input" type="text" name="id"></div>
+        <div class="font"><label>비밀번호</label><input class="input" type="password" name="password"></div>
+        <div><input class="box font" type="submit" value="제출" name="submit"></div>
+    </div>
+</body>
+
+</html>
