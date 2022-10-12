@@ -1,4 +1,4 @@
-$primary-color: rgb(0, 68, 255);
+$primary-color: #222;
 
 @mixin center($color) {
     color: $color;
@@ -45,7 +45,7 @@ li {
         font-size: 20px;
         font-weight: normal;
         line-height: 27px;
-        color: #222;
+        color: $primary-color;
     }
 
     ul {
@@ -56,11 +56,12 @@ li {
     li {
         margin-top: 10px;
         margin-bottom: 10px;
+        
+        a {
+            color: #555;
+        }
     }
 
-    li a {
-        color: #555;
-    }
 
     label {
         @include center($primary-color);
